@@ -1,0 +1,31 @@
+Readme file for generalized BCH code performance evaluator.
+By generalized the following is meant:
+	Codes over GF(Q^s) can be evaluated for performance.
+	Q is any prime or its power.
+	s belongs to Natural number set viz. 1,2,3,..
+
+Read the global.h file before modification.
+
+The DIM parameter in global.h controls the dimension of the modulation. A 64  symbol code may thus be sent by splitting into two 8-symbol modulation scheme.
+
+Executable file naming convention.
+GGGaaSbbTcc.e
+
+GGG- BCH or RS.
+aa is replaced by the numerical value of Q.
+bb is replaced by the numerical value of S.
+cc is replaced by the numerical value of T.
+e  = out, when executable = dat, when data file.
+
+Pecularities about the mapping/ constellation used for modulation must be mentioned in the main.c file as well as the figure generated from the dat file.
+
+Thus:
+BCHQ8S2T2.out - Double error correcting BCH code of over GF(8^2). This is the executable file.
+Note: AWGN channel is the one over which performance evaluation is done.
+
+
+/********************************************************************* 
+
+Programs by Kuntal Sampat towards M.S. thesis from the Dept. of Electrical Engineering, Texas A&M University,College Station, Texas 77843-3128.
+
+************************************************************************/
